@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo / Brand -->
+      <a href="#home" class="nav-logo">✦ My Portfolio</a>
+
+      <!-- Hamburger button (visible on mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"    class="nav-link">Home</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#skills"  class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home">
+
+    <!-- Decorative CSS-only background shapes -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="star star-1">✦</div>
+      <div class="star star-2">✦</div>
+      <div class="star star-3">✦</div>
+      <div class="star star-4">✦</div>
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle circle-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-greeting">Hi I'm</p>
+
+      <!-- ✏️ EDIT: Replace "Your Name" with your actual name -->
+      <h1 class="hero-name">Jothi Baskar</h1>
+
+      <!-- ✏️ EDIT: Replace with your tagline -->
+      <p class="hero-tagline">Aspiring Developer · Creative Thinker · Lifelong Learner</p>
+
+      <!-- ✏️ EDIT: Replace with your short introduction -->
+      <p class="hero-intro">
+        I'm a computer science student passionate about building beautiful,
+        user-friendly applications. I love turning ideas into reality through
+        clean code and thoughtful design.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <!-- ✏️ EDIT: Make sure resume.pdf is in the same folder -->
+        <a href="resume.pdf" download class="btn btn-outline">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="section about-section" id="about">
+    <div class="section-container">
+
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A little bit about who I am ✨</p>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Profile photo placeholder -->
+        <div class="about-photo-wrapper">
+          <div class="about-photo">
+            <!-- ✏️ EDIT: Replace this div with an <img> tag pointing to your photo -->
+            <!-- Example: <img src="photo.jpg" alt="Your Name" /> -->
+            <span class="photo-placeholder">🌸</span>
+          </div>
+          <!-- Decorative ring around photo -->
+          <div class="photo-ring"></div>
+        </div>
+
+        <!-- About text -->
+        <div class="about-text">
+
+          <!-- ✏️ EDIT: Replace with your personal description -->
+          <p class="about-description">
+            Hello! I'm a passionate and curious developer who enjoys crafting
+            clean, functional, and beautiful software. I believe great code
+            tells a story, and I love making that story easy for everyone to
+            read and enjoy.
+          </p>
+
+          <div class="about-cards">
+
+            <div class="about-card">
+              <span class="about-card-icon">📚</span>
+              <div>
+                <h4>Currently Studying</h4>
+                <!-- ✏️ EDIT -->
+                <p>B.Tech. Computer Science · VIT · 2023-27</p>
+              </div>
+            </div>
+
+            <div class="about-card">
+              <span class="about-card-icon">🎨</span>
+              <div>
+                <h4>Interests</h4>
+                <!-- ✏️ EDIT -->
+                <p>UI/UX Design · Open Source · Photography · Coffee ☕</p>
+              </div>
+            </div>
+
+            <div class="about-card">
+              <span class="about-card-icon">🔍</span>
+              <div>
+                <h4>Looking For</h4>
+                <!-- ✏️ EDIT -->
+                <p>Summer internships &amp; entry-level full-time opportunities in software development</p>
+              </div>
+            </div>
+
+          </div><!-- /.about-cards -->
+        </div><!-- /.about-text -->
+      </div><!-- /.about-grid -->
+    </div><!-- /.section-container -->
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="section skills-section" id="skills">
+    <div class="section-container">
+
+      <div class="section-header">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Tools &amp; technologies I work with 🛠️</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Programming Languages card -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">💻</span>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <!-- ✏️ EDIT: Add or remove skill tags as needed -->
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Tools card -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">🔧</span>
+            <h3>Tools &amp; Software</h3>
+          </div>
+          <div class="skill-tags">
+            <!-- ✏️ EDIT: Add or remove skill tags as needed -->
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+
+      </div><!-- /.skills-grid -->
+    </div><!-- /.section-container -->
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="section projects-section" id="projects">
+    <div class="section-container">
+
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Things I've built with love 🌷</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ───────── Project Card 1 ───────── -->
+        <div class="project-card">
+          <!-- ✏️ EDIT: Replace with a real screenshot. Example:
+               <img src="project1.png" alt="Project 1 Screenshot" />  -->
+          <div class="project-image">
+            <span class="project-image-placeholder">🖼️</span>
+          </div>
+          <div class="project-info">
+            <!-- ✏️ EDIT: Replace all placeholder text below -->
+            <h3 class="project-title">Project Title One</h3>
+            <p class="project-description">
+              A short and sweet description of what this project does,
+              the problem it solves, and what makes it special.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <!-- ✏️ EDIT: Replace # with your GitHub repo URL -->
+              <a href="https://github.com/jothibaskar333" target="_blank" class="btn btn-small btn-outline">
+                ⭐ GitHub
+              </a>
+              <!-- ✏️ EDIT: Replace # with your live demo URL -->
+              <a href="#" target="_blank" class="btn btn-small btn-primary">
+                🚀 Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ───────── Project Card 2 ───────── -->
+        <div class="project-card">
+          <div class="project-image">
+            <span class="project-image-placeholder">🖼️</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Project Title Two</h3>
+            <p class="project-description">
+              Another project you're proud of. Describe the key features,
+              your role, and any interesting technical challenges you solved.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn btn-small btn-outline">⭐ GitHub</a>
+              <a href="#" target="_blank" class="btn btn-small btn-primary">🚀 Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ───────── Project Card 3 ───────── -->
+        <div class="project-card">
+          <div class="project-image">
+            <span class="project-image-placeholder">🖼️</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Project Title Three</h3>
+            <p class="project-description">
+              Your third amazing project. Maybe it's something unique — a
+              game, a tool, an API integration — describe it here!
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">Figma</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn btn-small btn-outline">⭐ GitHub</a>
+              <a href="#" target="_blank" class="btn btn-small btn-primary">🚀 Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.projects-grid -->
+    </div><!-- /.section-container -->
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="section contact-section" id="contact">
+    <div class="section-container">
+
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's build something amazing together 💌</p>
+      </div>
+
+      <p class="contact-cta-text">
+        I'm currently open to new opportunities. Whether you have a question,
+        a project idea, or just want to say hi — my inbox is always open!
+      </p>
+
+      <div class="contact-icons">
+
+        <!-- ✏️ EDIT: Replace # with your LinkedIn profile URL -->
+        <a href="https://www.linkedin.com/in/jothi-baskar/" target="_blank" class="contact-icon-btn" aria-label="LinkedIn">
+          <div class="contact-icon linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </div>
+          <span>LinkedIn</span>
+        </a>
+
+        <!-- ✏️ EDIT: Replace # with your GitHub profile URL -->
+        <a href="https://github.com/jothibaskar333" target="_blank" class="contact-icon-btn" aria-label="GitHub">
+          <div class="contact-icon github">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </div>
+          <span>GitHub</span>
+        </a>
+
+        <!-- ✏️ EDIT: Replace the mailto address with your email -->
+        <a href="mailto:jothibaskar2015@gmail.com" class="contact-icon-btn" aria-label="Email">
+          <div class="contact-icon email">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </div>
+          <span>Email</span>
+        </a>
+
+        <!-- Resume download -->
+        <!-- ✏️ EDIT: Make sure resume.pdf is in the same folder -->
+        <a href="resume.pdf" download class="contact-icon-btn" aria-label="Download Resume">
+          <div class="contact-icon resume">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zm-1 8l-3-3h2v-4h2v4h2l-3 3z"/>
+            </svg>
+          </div>
+          <span>Resume</span>
+        </a>
+
+      </div><!-- /.contact-icons -->
+    </div><!-- /.section-container -->
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>
+      Made with ❤️ by
+      <!-- ✏️ EDIT: Replace "Your Name" with your name -->
+      <strong>Jothi and AI :)</strong>
+      &nbsp;·&nbsp;
+      <!-- The year is set automatically by JavaScript -->
+      <span id="footer-year"></span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
